@@ -62,7 +62,7 @@ import fabrication from '../images/fabrication.jpg';
 import welding from '../images/welding.jpg';
 import painting from '../images/painting.jpg';
 import surface from '../images/surface.jpg';
-
+import { useNavigate } from 'react-router-dom';
 
 
 const SERVICES = [
@@ -89,6 +89,7 @@ const SERVICES = [
 ];
 
 export default function Services({ onNavigate }) {
+   const navigate = useNavigate();
   return (
     <section className="services-page">
 
@@ -138,7 +139,7 @@ export default function Services({ onNavigate }) {
         <button
           className="btn ghost"
           type="button"
-          onClick={() => onNavigate && onNavigate('contact')}
+          onClick={() => navigate('/contact')}
         >
           Contact Me
         </button>

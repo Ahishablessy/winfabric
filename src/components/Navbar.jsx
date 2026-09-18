@@ -26,7 +26,7 @@ export default function Navbar() {
 >
   <div className="p-2 text-warning fw-bold">
     <IoCall />
-    &nbsp;&nbsp; <a href="tel:+919460244204" className='text-warning'>+91-9460244204</a>
+    &nbsp;&nbsp; <a href="tel:+919460244204" className='text-warning'>+91-94602 44204</a>
   </div>
 
   <div className="p-2 text-warning fw-bold">

@@ -91,7 +91,8 @@
 // }
 
 import { useState } from 'react';
-
+import { MdEmail } from "react-icons/md";
+import { IoCall } from "react-icons/io5";
 
 // 1. Go to https://formspree.io and create a free account
 // 2. Create a new form, it will give you an endpoint like:
@@ -144,14 +145,17 @@ export default function Contact() {
           </p>
 
           <div className="contact-links">
-            <a href="mailto:admin@vinfabricationworks.com">admin@vinfabricationworks.com</a>
-            <a href="tel:+919460244204">+91-9460244204</a>
+          
+    <a href="mailto:admin@vinfabricationworks.com">  <MdEmail />
+    &nbsp;&nbsp;admin@vinfabricationworks.com</a>
+            <a href="tel:+919460244204"> <IoCall />
+    &nbsp;&nbsp; +91-94602 44204</a>
           </div>
 
           <div className="contact-meta">
             <div className="meta-row">
               <span className="meta-label">Working Hours</span>
-              <span>Mon – Sat, 9:00 AM – 6:00 PM</span>
+              <span>Mon – Sat, 09:00 AM – 07:00 PM</span>
             </div>
             <div className="meta-row">
               <span className="meta-label">Response Time</span>

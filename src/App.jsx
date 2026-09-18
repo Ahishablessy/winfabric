@@ -52,7 +52,7 @@ export default function App() {
                <div className="footer-item fw-bold">
                  <IoCall />
                  &nbsp;&nbsp;
-                 <a href="tel:+919460244204">+91-9460244204</a>
+                 <a href="tel:+919460244204">+91-94602 44204</a>
                </div>
      
                <div className="footer-item fw-bold">
