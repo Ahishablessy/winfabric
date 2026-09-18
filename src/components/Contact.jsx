@@ -145,11 +145,10 @@ export default function Contact() {
           </p>
 
           <div className="contact-links">
-          
-    <a href="mailto:admin@vinfabricationworks.com">  <MdEmail />
+            <a href="mailto:admin@vinfabricationworks.com">  <MdEmail />
     &nbsp;&nbsp;admin@vinfabricationworks.com</a>
             <a href="tel:+919460244204"> <IoCall />
-    &nbsp;&nbsp; +91-94602 44204</a>
+    &nbsp;&nbsp;+91-94602 44204</a>
           </div>
 
           <div className="contact-meta">
@@ -161,6 +160,16 @@ export default function Contact() {
               <span className="meta-label">Response Time</span>
               <span>Within 1 business day</span>
             </div>
+          </div>
+
+          <div className="qc-contact">
+            <div className="qc-label">For Quality Queries</div>
+            <div className="qc-name">Senthil M</div>
+            <div className="qc-role">Senior Manager, Quality Control</div>
+            <a href="mailto:senthil.m@vinfabricationworks.com">  <MdEmail />
+    &nbsp;&nbsp;
+              senthil.m@vinfabricationworks.com
+            </a>
           </div>
         </div>
 
@@ -206,7 +215,8 @@ export default function Contact() {
 
             <button
               type="submit"
-              className="btn" style={{border:"1px solid black"}}
+              style={{border:"1px solid black"}}
+              className="btn"
               disabled={status === 'sending'}
             >
               {status === 'sending' ? 'Sending...' : 'Send Enquiry'}
@@ -232,4 +242,3 @@ export default function Contact() {
     </section>
   );
 }
-

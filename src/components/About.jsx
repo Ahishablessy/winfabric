@@ -111,7 +111,7 @@ export default function About() {
         <div className="eyebrow-mark">About Us</div>
         <p>
           We are an independent and growing industrial services company led by
-          Lenin D, Owner, with over 7 years of experience in fabrication,
+          Lenin D, Owner, with over 6 years of experience in fabrication,
           welding, surface preparation, coating and painting activities.
         </p>
         <p>

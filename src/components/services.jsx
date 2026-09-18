@@ -58,14 +58,17 @@
 
 import { Carousel } from 'react-bootstrap';
 
-import fabrication from '../images/fabrication.jpg';
-import welding from '../images/welding.jpg';
-import painting from '../images/painting.jpg';
-import surface from '../images/surface.jpg';
+import fabrication from '../images/fabrication1.jpeg';
+import welding from '../images/welding1.jpeg';
+import painting from '../images/painting1.jpeg';
+import surface from '../images/surfacepreparation1.jpeg';
+import fabrication2 from '../images/fabrication2.jpg';
+import welding2 from '../images/welding2.jpg';
+import painting2 from '../images/painting2.jpeg';
+import surface2 from '../images/surfacepreparation2.jpg';
 import { useNavigate } from 'react-router-dom';
 
-
-const SERVICES = [
+const SERVICES1 = [
   {
     title: 'Fabrication',
     img: fabrication,
@@ -88,6 +91,29 @@ const SERVICES = [
   },
 ];
 
+const SERVICES = [
+  {
+    title: 'Fabrication',
+    img: fabrication2,
+    desc: 'Structural fabrication carried out with accuracy, proper measurements and quality workmanship as per project drawings and specifications.',
+  },
+  {
+    title: 'Welding',
+    img: welding2,
+    desc: 'Fit-up, joint preparation and welding activities supervised to ensure consistent quality, strength and compliance with approved procedures.',
+  },
+  {
+    title: 'Surface Preparation',
+    img: surface2,
+    desc: 'Proper cleaning, blasting and surface profile preparation carried out before coating to ensure long-lasting adhesion and protection.',
+  },
+  {
+    title: 'Painting & Coating',
+    img: painting2,
+    desc: 'Primer, intermediate and finishing coats applied with focus on dry film thickness (DFT), corrosion protection and final appearance.',
+  },
+];
+
 export default function Services({ onNavigate }) {
    const navigate = useNavigate();
   return (
@@ -95,7 +121,7 @@ export default function Services({ onNavigate }) {
 
       {/* ===== Carousel ===== */}
       <Carousel fade className="services-carousel">
-        {SERVICES.map((s) => (
+        {SERVICES1.map((s) => (
           <Carousel.Item key={s.title} interval={3000}>
             <img
               className="d-block w-100 carousel-img"
@@ -111,7 +137,7 @@ export default function Services({ onNavigate }) {
 
       {/* ===== Intro ===== */}
       <div className="services-intro">
-        <div className="eyebrow-mark">Our Services</div>
+        {/* <div className="eyebrow-mark">Our Services</div> */}
         <h2>Complete Industrial Support From Fabrication to Final Finish</h2>
         <p>
           We provide reliable supervision and quality-focused support across
