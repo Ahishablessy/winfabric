@@ -3,12 +3,13 @@ import { MdEmail } from "react-icons/md";
 import { IoCall } from "react-icons/io5";
 import { Link, useLocation } from 'react-router-dom';
 import logobgremove from '../images/logobgremove.png';
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const LINKS = [
   { id: 'home', label: 'Home', path: '/' },
   { id: 'about', label: 'About', path: '/about' },
-  { id: 'services', label: 'Services', path: '/services' },
-  { id: 'contact', label: 'Contact', path: '/contact' },
+  { id: 'services', label: 'Our Services', path: '/services' },
+  { id: 'contact', label: 'Contact Us', path: '/contact' },
 ];
 
 export default function Navbar() {
@@ -19,17 +20,22 @@ export default function Navbar() {
     <header>
 
       {/* Top Contact Bar */}
-      <div className="d-flex justify-content-end bg-secondary">
-        <div className="p-2 text-white fw-bold">
-          <IoCall />
-          &nbsp;&nbsp;+91-9876543218
-        </div>
+   <div
+  className="d-none d-lg-flex justify-content-end align-items-center bg-secondary"
+  style={{ paddingRight: "225px" }}
+>
+  <div className="p-2 text-warning fw-bold">
+    <IoCall />
+    &nbsp;&nbsp; <a href="tel:+919460244204" className='text-warning'>+91-9460244204</a>
+  </div>
 
-        <div className="p-2 pe-5 text-white fw-bold">
-          <MdEmail />
-          &nbsp;&nbsp;admin@vinfabrications.com
-        </div>
-      </div>
+  <div className="p-2 text-warning fw-bold">
+    <MdEmail />
+    &nbsp;&nbsp;<a href="mailto:admin@vinfabricationworks.com" className='text-warning'>
+                   admin@vinfabricationworks.com
+                 </a>
+  </div>
+</div>
 
       {/* Navbar */}
       <div className="navbar">
@@ -53,7 +59,7 @@ export default function Navbar() {
           aria-controls="navlinks"
           onClick={() => setOpen((o) => !o)}
         >
-          Menu
+         <GiHamburgerMenu />
         </button>
 
         {/* Navigation Links */}
@@ -71,6 +77,7 @@ export default function Navbar() {
             return (
               <li key={link.id}>
                 <Link
+                style={{color:"black",textDecoration:"none"}}
                   to={link.path}
                   className={isActive ? 'active' : ''}
                   onClick={() => setOpen(false)}

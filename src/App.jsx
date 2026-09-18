@@ -36,61 +36,50 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <div
-        className="d-flex justify-content-around"
-        style={{ background: "lightgrey" }}
-      >
-
-        <div className="p-2">
-          <img
-            src={logobgremove}
-            alt="logo"
-            style={{
-              width: "200px",
-              height: "200px"
-            }}
-          />
-        </div>
-
-        <div className="p-2">
-
-          <div className="p-2 fw-bold">
-            <IoCall />
-            &nbsp;&nbsp;+91-9876543218
-          </div>
-
-          <div className="p-2 fw-bold">
-            <MdEmail />
-            &nbsp;&nbsp;admin@vinfabrications.com
-          </div>
-
-        </div>
-
-        <div className="p-2">
-
-          <p>
-            <a href="/">Home</a>
-          </p>
-
-          <p>
-            <a href="/about">About</a>
-          </p>
-
-          <p>
-            <a href="/services">Our Services</a>
-          </p>
-
-          <p>
-            <a href="/contact">Contact Us</a>
-          </p>
-
-        </div>
-
-      </div>
-
-      <footer>
-        © 2026 Jordan Rivera. Built with care.
-      </footer>
+       <>
+           <div className="site-footer">
+     
+             <div className="footer-col logo-col">
+               <img
+                 src={logobgremove}
+                 alt="logo"
+                 className="footer-logo"
+               />
+             </div>
+     
+             <div className="footer-col contact-col">
+     
+               <div className="footer-item fw-bold">
+                 <IoCall />
+                 &nbsp;&nbsp;
+                 <a href="tel:+919460244204">+91-9460244204</a>
+               </div>
+     
+               <div className="footer-item fw-bold">
+                 <MdEmail />
+                 &nbsp;&nbsp;
+                 <a href="mailto:admin@vinfabricationworks.com">
+                   admin@vinfabricationworks.com
+                 </a>
+               </div>
+     
+             </div>
+     
+             <div className="footer-col links-col">
+     
+               <p><a href="/">Home</a></p>
+               <p><a href="/about">About</a></p>
+               <p><a href="/services">Our Services</a></p>
+               <p><a href="/contact">Contact Us</a></p>
+     
+             </div>
+     
+           </div>
+     
+           <div className="footer-bottom fw-bold">
+             © 2025. All rights reserved. Vin Fabrication Works
+           </div>
+         </>
 
     </BrowserRouter>
   );
