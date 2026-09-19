@@ -199,7 +199,7 @@ export default function Home({ onNavigate }) {
                     className="btn ghost"
                     onClick={() => navigate('/contact')}
                   >
-                    Contact Me
+                    Contact Us
                   </button>
 
                   <button

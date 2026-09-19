@@ -167,7 +167,7 @@ export default function Services({ onNavigate }) {
           type="button"
           onClick={() => navigate('/contact')}
         >
-          Contact Me
+          Contact Us
         </button>
       </div>
 

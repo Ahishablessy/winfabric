@@ -77,7 +77,7 @@ export default function App() {
            </div>
      
            <div className="footer-bottom fw-bold">
-             © 2025. All rights reserved. Vin Fabrication Works
+             © 2026. All rights reserved. Vin Fabrication Works
            </div>
          </>
 
